@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="My name is Benjamin Walveranta. This page is our Course Home Page assignment for WDD 231 - Web Frontend Development 1">
+    <meta name="author" content="Benjamin">
+    <title>Document</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+    <!--javascript-->
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+    <div id="background-color">
+    </div>
+    <div id="background-color2">
+    </div>
+
+    <header>
+        <img src="images/profile.jpg" alt="picture of me">
+        <h1>Benjamin Walveranta</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="home-button">Home</a></li>
+            <li><a href="#" class="chamber-button">Chamber</a></li>
+            <li><a href="#" class="github-button">Github</a></li>
+            <li><a href="#" class="border-draw-fast linkedin-button">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main class="fade-in">
+        <section id="course-work-container">
+            <div class="section-header">
+                <h2>Course Work</h2>
+            </div>
+            <div class="section-body">
+                <ul>
+                    <li><a href="#">placeholder</a></li>
+                    <li><a href="#">placeholder</a></li>
+                    <li><a href="#">placeholder</a></li>
+                    <li><a href="#">placeholder</a></li>
+                    <li><a href="#">placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="location-container">
+            <div class="section-header">
+                <h2>Dallas, Texas</h2>
+            </div>
+            <div class="section-body">
+                <img src="images/dallas.jpg" alt="Dallas">
+
+            </div>
+        </section>
+        <section id="certificate-container">
+            <div class="section-header">
+                <h2>Web and Computer Programming Certificate</h2>
+            </div>
+            <div id="filter-container">
+
+                <ul>
+                    <li><a href="#" id="show-all">All</a></li>
+                    <li><a href="#" id="show-cse">CSE</a></li>
+                    <li><a href="#" id="show-wdd">WDD</a></li>
+                </ul>
+            </div>
+            <div class="section-body" id="courses-table">
+                <!--make this grid 33%/33%/33% and then auto rows-->
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p><span id="currentyear"></span> | Benjamin Walveranta | Texas, USA</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

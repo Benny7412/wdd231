@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  img {
+    width: auto;
+    height: clamp(150px, 15vw, 1000px);
+  }
+}

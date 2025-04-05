@@ -7,20 +7,32 @@
     <meta name="description"
           content="My name is Benjamin Walveranta. This page is the Chamber assignment for WDD 231 - Web Frontend Development 1">
     <meta name="author" content="Benjamin">
-    <title>Directory</title>
 
+    <title>Directory</title>
     <link rel="icon" href="favicon.ico">
 
-    <!--remember to fill with content !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--open graph-->
     <meta property="og:title" content="Benjamin Walveranta">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://example.com/example.jpg">
     <meta property="og:url" content="https://example.com">
 
-
     <!--css-->
-    <link rel="stylesheet" href="styles/css/normalize.css">
-    <link rel="stylesheet" href="styles/css/directory.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!--Javascript-->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -34,9 +46,14 @@
                 <h2>Chamber of Commerce</h2>
             </div>
         </div>
+        <button class="hamburger-menu" aria-label="hamburger menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
         <nav>
             <ul>
-                <li class="nav-element"><a href="">Home</a></li>
+                <li class="nav-element current"><a href="">Home</a></li>
                 <li class="nav-element"><a href="">Directory</a></li>
                 <li class="nav-element"><a href="">Join</a></li>
                 <li class="nav-element"><a href="">Discover</a></li>
@@ -44,50 +61,69 @@
         </nav>
     </header>
 
-
     <main>
-        <div id="business-card">
-            <div id="card-header">
-                <p>Lorem, ipsum dolor.</p>
-                <p>Repudiandae, porro atque?</p>
+
+        <section id="hero-container">
+            <div class="hero-content">
+                <img src="images/timbuktu.jpg" alt="Timbuktu landscape" class="hero-image">
+
+                <a href="#" class="cta-button">Keynote Tickets</a>
             </div>
-            <div id="card-body">
-                <img src="" alt="" id="card-icon">
-                <div id="card-contact-info">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Totam alias doloremque aspernatur dolorum.</p>
-                    <p>Tempora eligendi ex praesentium nemo?</p>
+        </section>
+
+        <section id="home-container">
+
+            <div id="events-container" class="info-container">
+                <div class="container-header">
+                    <h2>Events</h2>
+                </div>
+                <div class="events-content">
+                    <p class="event-empty-message">No upcoming events at this time. </p>
                 </div>
             </div>
-        </div>
-        <div id="business-card">
-            <div id="card-header">
-                <p>Lorem, ipsum dolor.</p>
-                <p>Illum, laborum ipsa.</p>
-            </div>
-            <div id="card-body">
-                <img src="" alt="" id="card-icon">
-                <div id="card-contact-info">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Dicta reprehenderit aut aspernatur ipsam.</p>
-                    <p>Explicabo dolore consequatur reprehenderit earum?</p>
+
+            <div id="weather-container" class="info-container">
+                <div class="container-header">
+                    <h2><span id="location"></span> Weather</h2>
+                </div>
+                <div class="weather-content">
+                    <div class="weather-icon-container">
+                        <img id="weather-icon" src="" alt="">
+                        <strong>
+                            <figcaption></figcaption>
+                        </strong>
+                    </div>
+
+                    <div class="weather-data-container">
+                        <span id="current-temp"></span>
+                        <span id="current-clouds"></span>
+                        <p><strong>High:</strong> <span id="current-high"></span></p>
+                        <p><strong>Low:</strong> <span id="current-low"></span></p>
+                        <p><strong>Humidity:</strong> <span id="current-humidity"></span></p>
+                        <p><strong>Sunrise:</strong> <span id="current-sunrise"></span></p>
+                        <p><strong>Sunset:</strong> <span id="current-sunset"></span></p>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div id="business-card">
-            <div id="card-header">
-                <p>Lorem, ipsum dolor.</p>
-                <p>Molestias, quia minima?</p>
-            </div>
-            <div id="card-body">
-                <img src="" alt="" id="card-icon">
-                <div id="card-contact-info">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Ad repudiandae minus dolores harum.</p>
-                    <p>Quam eius ipsam sunt molestias.</p>
+
+            <div id="forecast-container" class="info-container">
+                <div class="container-header">
+                    <h2>Weather Forecast</h2>
                 </div>
+                <ul>
+                    <span id="today-forecast"></span>
+                    <span id="day-two-forecast"></span>
+                    <span id="day-three-forecast"></span>
+                </ul>
             </div>
-        </div>
+
+        </section>
+
+        <section id="member-card-container">
+
+        </section>
+
     </main>
 
     <footer>

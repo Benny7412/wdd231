@@ -42,7 +42,7 @@ function displayResults(data) {
     .join(" ");
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
-  captionDesc.textContent = desc;
+  captionDesc.innerHTML = `<strong>${desc}</strong>`;
 
   if (cityLocation) cityLocation.innerHTML = data.name;
 

@@ -36,7 +36,10 @@ async function apiFetch() {
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
+  let desc = data.weather[0].description
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
   captionDesc.textContent = desc;
@@ -86,24 +89,31 @@ function displayForecast(data) {
     return new Intl.DateTimeFormat("en-US", options).format(date);
   };
 
+  const toTitleCase = (str) => {
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+  };
+
   //day1
   todayForecast.innerHTML = `<strong>Today:</strong> ${todayData.main.temp.toFixed(
     1
-  )}&deg;C, ${todayData.weather[0].description}`;
+  )}&deg;C, ${toTitleCase(todayData.weather[0].description)}`;
 
   //day2
   dayTwoForecast.innerHTML = `<strong>${formatDay(
     dayTwoData.dt
-  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C, ${
+  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C, ${toTitleCase(
     dayTwoData.weather[0].description
-  }`;
+  )}`;
 
   //day3
   dayThreeForecast.innerHTML = `<strong>${formatDay(
     dayThreeData.dt
-  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C, ${
+  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C, ${toTitleCase(
     dayThreeData.weather[0].description
-  }`;
+  )}`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

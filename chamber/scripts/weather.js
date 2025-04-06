@@ -24,7 +24,6 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
       throw Error(await response.text());
@@ -67,7 +66,6 @@ async function fetchForecast() {
     const responseForecast = await fetch(forecastUrl);
     if (responseForecast.ok) {
       const dataForecast = await responseForecast.json();
-      console.log(dataForecast);
       displayForecast(dataForecast);
     } else {
       throw Error(await responseForecast.text());

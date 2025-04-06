@@ -1,6 +1,6 @@
 async function loadMemberCards() {
   try {
-    const response = await fetch("../data/members.json");
+    const response = await fetch("data/members.json");
     if (!response.ok) {
       throw new Error(`Failed to fetch members data: ${response.status}`);
     }

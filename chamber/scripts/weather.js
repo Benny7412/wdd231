@@ -89,31 +89,22 @@ function displayForecast(data) {
     return new Intl.DateTimeFormat("en-US", options).format(date);
   };
 
-  const toTitleCase = (str) => {
-    return str
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" ");
-  };
-
   //day1
   todayForecast.innerHTML = `<strong>Today:</strong> ${todayData.main.temp.toFixed(
     1
-  )}&deg;C, ${toTitleCase(todayData.weather[0].description)}`;
+  )}&deg;C, `;
 
   //day2
   dayTwoForecast.innerHTML = `<strong>${formatDay(
     dayTwoData.dt
-  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C, ${toTitleCase(
-    dayTwoData.weather[0].description
-  )}`;
+  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C
+  `;
 
   //day3
   dayThreeForecast.innerHTML = `<strong>${formatDay(
     dayThreeData.dt
-  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C, ${toTitleCase(
-    dayThreeData.weather[0].description
-  )}`;
+  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C
+  `;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

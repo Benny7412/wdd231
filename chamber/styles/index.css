@@ -253,6 +253,9 @@ nav a:hover {
   background-color: #f8f9fa;
   border-radius: 3px;
 }
+.temperature-styles {
+  font-size: 1.1rem;
+}
 
 /*Event Container*/
 #events-container {

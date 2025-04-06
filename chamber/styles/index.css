@@ -263,7 +263,7 @@ nav a:hover {
   height: 100%;
 }
 
-/* Member cards */
+/* Member card section */
 #member-card-container {
   display: flex;
   flex-direction: row;
@@ -272,6 +272,8 @@ nav a:hover {
   width: 100%;
   gap: 20px;
   padding: 20px;
+
+  justify-content: center;
 }
 
 .member-card {

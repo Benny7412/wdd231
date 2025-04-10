@@ -24,6 +24,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
+      console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
       throw Error(await response.text());
@@ -36,13 +37,10 @@ async function apiFetch() {
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description
-    .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-    .join(" ");
+  let desc = data.weather[0].description;
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
-  captionDesc.innerHTML = `<strong>${desc}</strong>`;
+  captionDesc.textContent = desc;
 
   if (cityLocation) cityLocation.innerHTML = data.name;
 
@@ -69,6 +67,7 @@ async function fetchForecast() {
     const responseForecast = await fetch(forecastUrl);
     if (responseForecast.ok) {
       const dataForecast = await responseForecast.json();
+      console.log(dataForecast);
       displayForecast(dataForecast);
     } else {
       throw Error(await responseForecast.text());
@@ -92,19 +91,21 @@ function displayForecast(data) {
   //day1
   todayForecast.innerHTML = `<strong>Today:</strong> ${todayData.main.temp.toFixed(
     1
-  )}&deg;C, `;
+  )}&deg;C, ${todayData.weather[0].description}`;
 
   //day2
   dayTwoForecast.innerHTML = `<strong>${formatDay(
     dayTwoData.dt
-  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C
-  `;
+  )}:</strong> ${dayTwoData.main.temp.toFixed(1)}&deg;C, ${
+    dayTwoData.weather[0].description
+  }`;
 
   //day3
   dayThreeForecast.innerHTML = `<strong>${formatDay(
     dayThreeData.dt
-  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C
-  `;
+  )}:</strong> ${dayThreeData.main.temp.toFixed(1)}&deg;C, ${
+    dayThreeData.weather[0].description
+  }`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

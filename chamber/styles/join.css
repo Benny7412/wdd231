@@ -80,15 +80,20 @@ header {
   text-align: center;
 }
 
-header h1 {
+header h2 {
   font-size: 1.8rem;
   margin-bottom: 0.2rem;
 }
 
-header h2 {
+header h3 {
   font-size: 1.2rem;
   font-weight: normal;
 }
+
+h1 {
+  display: none;
+}
+
 
 /* Navigation */
 nav ul {

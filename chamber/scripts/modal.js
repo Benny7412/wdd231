@@ -16,8 +16,3 @@
     if (e.target.classList.contains('modal')) {
       e.target.style.display = 'none';
     }});
-
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-    document.getElementById(
-      "last-modified"
-    ).textContent = `Last Modified: ${document.lastModified}`;

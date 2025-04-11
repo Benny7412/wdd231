@@ -1,0 +1,148 @@
+/* Title Section */
+.discover-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.discover-title h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+.discover-title p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Visitor Info Message */
+.visitor-info {
+  background-color: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.visitor-info #visit-message {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  grid-template-areas: "place1" "place2" "place3" "place4" "place5" "place6" "place7" "place8";
+}
+
+/* Place Card Styling */
+.place-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.place-card:nth-child(1) {
+  grid-area: place1;
+}
+.place-card:nth-child(2) {
+  grid-area: place2;
+}
+.place-card:nth-child(3) {
+  grid-area: place3;
+}
+.place-card:nth-child(4) {
+  grid-area: place4;
+}
+.place-card:nth-child(5) {
+  grid-area: place5;
+}
+.place-card:nth-child(6) {
+  grid-area: place6;
+}
+.place-card:nth-child(7) {
+  grid-area: place7;
+}
+.place-card:nth-child(8) {
+  grid-area: place8;
+}
+.place-card .place-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.place-card .place-image figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.place-card .place-image figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.place-card .place-info {
+  padding: 1.5rem;
+}
+.place-card .place-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+.place-card .place-info address {
+  font-style: normal;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.place-card .place-info p {
+  color: #34495e;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.place-card .place-info button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.place-card .place-info button:hover {
+  background-color: #2980b9;
+}
+
+@media screen and (min-width: 641px) {
+  .place-card .place-image figure img:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "place1 place2" "place3 place4" "place5 place6" "place7 place8";
+  }
+  .place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "place1 place2 place3 place4" "place5 place6 place7 place8";
+  }
+  .place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .discover-title h2 {
+    font-size: 3rem;
+  }
+  .discover-title p {
+    font-size: 1.4rem;
+  }
+}

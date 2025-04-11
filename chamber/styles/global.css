@@ -133,7 +133,7 @@ nav a:hover {
 .hamburger-menu:focus {
   outline: none;
 }
-.hamburger-menu div {
+.hamburger-menu span {
   width: 2rem;
   height: 0.25rem;
   background: #ecf0f1;

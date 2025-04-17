@@ -224,7 +224,7 @@ const displayForecast = (data) => {
         const dateTime = new Date(dt * 1000);
         const itemDayString = dateTime.toLocaleDateString([], { weekday: 'long', month: 'long', day: 'numeric' });
         const dateShortString = dateTime.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
-        const timeString = dateTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hourTwelve: true }); //can be set to false if wanted
+        const timeString = dateTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hourTwelve: false }); //can be set to false if wanted
         const iconCode = weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 

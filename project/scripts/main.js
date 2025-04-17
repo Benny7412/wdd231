@@ -47,7 +47,6 @@ const hideError = (element) => {
     }
 };
 
-
 if (mobileMenuToggle && navLinks) {
     mobileMenuToggle.addEventListener('click', () => {
         const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';

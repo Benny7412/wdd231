@@ -41,7 +41,7 @@ async function loadPlaces() {
 
     } catch (error) {
         console.error('Error loading places data:', error);
-        document.querySelector('.discover-grid').innerHTML = '<p class="error-message">Sorry, we couldn\'t load the places of interest. Please try again later.</p>';
+        document.querySelector('.discover-grid').innerHTML = '<p class="error-message">Sorry, we couldn\'t load the points of interest.</p>';
     }
 }
 

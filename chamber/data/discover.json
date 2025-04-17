@@ -1,52 +1,52 @@
 {
     "places": [
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "Fort Worth Stockyards",
+        "address": "Fort Worth, TX 76164",
+        "description": "The Fort Worth Stockyards is a historic district that is located in Fort Worth, Texas, United States, north of the central business district.",
+        "image": "images/stockyards.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "Water Gardens",
+        "address": "1502 Commerce St, Fort Worth, TX 76102",
+        "description": "The Water Gardens are a celebrated urban Texas masterpiece by architects Philip Johnson and John Burgee.",
+        "image": "images/water-gardens.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "The Perot Musem",
+        "address": "2201 N Field St, Dallas, TX 75201",
+        "description": "The Perot Museum of Nature and Science is a natural history and science museum in Dallas, Texas, in Victory Park.",
+        "image": "images/perot-musem.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "The Dallas Zoo",
+        "address": "650 S R.L. Thornton Fwy, Dallas, TX 75203",
+        "description": "Dallas Zoo is a 106-acre zoo located 3 mi south of downtown Dallas, Texas. And it has a petting zoo!",
+        "image": "images/dallas-zoo.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "Hutchins BBQ",
+        "address": "9225 Preston Rd, Frisco, TX 75033,\n1301 N Tennessee St, McKinney, TX 75069",
+        "description": "Some of the best BBQ in all of Texas",
+        "image": "images/hutchins.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "The National Videogame Musem",
+        "address": "8004 Dallas Pkwy, Frisco, TX 75034",
+        "description": "The National Videogame Museum is a video game museum about the history of video games and the video game industry, located in Frisco, Texas.",
+        "image": "images/national-videogame-musem.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "The Reunion Tower",
+        "address": "300 Reunion Blvd E, Dallas, TX 75207",
+        "description": "Reunion Tower is a 561 ft observation tower in Dallas, and one of the city's most recognizable landmarks.",
+        "image": "images/reunion-tower.jpg"
       },
       {
-        "name": "Dallas Placeholder",
-        "address": "123, Dallas Street, Texas",
-        "description": "add the dallas data soon",
-        "image": "images/timbuktu.jpg"
+        "name": "The Botanical Garden",
+        "address": "8525 Garland Rd, Dallas, TX 75218",
+        "description": "The Dallas Arboretum and Botanical Garden is a 66-acre beautiful botanical garden",
+        "image": "images/botanical-garden.jpg"
       }
     ]
   }

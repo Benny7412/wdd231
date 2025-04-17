@@ -13,7 +13,7 @@
   color: #7f8c8d;
 }
 
-/* Visitor Info Message */
+/*Visitor Info Message */
 .visitor-info {
   background-color: #ecf0f1;
   padding: 1.5rem;
@@ -34,7 +34,7 @@
   grid-template-areas: "place1" "place2" "place3" "place4" "place5" "place6" "place7" "place8";
 }
 
-/* Place Card Styling */
+/*Place Card Styles*/
 .place-card {
   background-color: white;
   border-radius: 8px;
@@ -89,12 +89,15 @@
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #2c3e50;
+  line-height: 1.3;
 }
 .place-card .place-info address {
   font-style: normal;
-  color: #7f8c8d;
+  color: #000000;
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  font-weight: 700;
+  
 }
 .place-card .place-info p {
   color: #34495e;
@@ -102,7 +105,7 @@
   line-height: 1.6;
 }
 .place-card .place-info button {
-  background-color: #3498db;
+  background-color: #2775a8;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -112,7 +115,7 @@
   transition: background-color 0.3s;
 }
 .place-card .place-info button:hover {
-  background-color: #2980b9;
+  background-color: #2471a5;
 }
 
 @media screen and (min-width: 641px) {

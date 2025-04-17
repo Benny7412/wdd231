@@ -1,0 +1,56 @@
+/* Simplified spacing variables */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 1em;
+}
+
+h1 {
+  margin-bottom: 1.6em;
+}
+
+h2 {
+  width: fit-content;
+  border-bottom: #bbb 1px solid;
+  margin-bottom: 1em;
+}
+
+.showcase {
+  margin-bottom: 1.6em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.showcase div {
+  margin-bottom: 1em;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #a0c7ca;
+}
+
+.body-text {
+  font-family: "Segoe UI", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+

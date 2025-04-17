@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Search - Get detailed forecast information for your area!.">
+
+    <meta property="og:title" content="Weather Forecast">
+    <meta property="og:description" content="Get a detailed 5-day weather forecast.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="replaceaftercommiuting to github!! contact.html">
+    <!-- <meta property="og:image" content="https://yourweathersearch.com/images/forecast-preview.jpg"> -->
+
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <title>Weather Forecast - 5-Day Outlook</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Weather Search</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links-list">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="forecast.html">Forecast</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>The Weather Database</h2>
+            <form class="search-form" id="weather-search-form">
+                <input type="text" id="location-input" class="input-styles" placeholder="Enter city or zip code" aria-label="Enter city or zip code" required>
+                <button type="submit" class="button-styles">Search</button>
+            </form>
+            <p id="search-error" class="error-message hidden"></p>
+        </section>
+
+        <section class="current-weather hidden">
+            <div class="container vertical-container">
+                <h2 id="current-weather-location">Current Weather</h2>
+                <div class="loader hidden">Loading...</div>
+                <div id="weather-results" class="weather-card">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Weather Search. All rights reserved.</p>
+            <p>Powered by OpenWeather API</p>
+        </div>
+    </footer>
+
+    <div id="weather-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <div id="modal-body">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

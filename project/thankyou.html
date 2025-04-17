@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You - Weather Search</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+
+<body>
+    <div class="message-box">
+        <h1>Thank You!</h1>
+        <p>Your message has been received. We received the following information:</p>
+
+        <div class="submitted-data">
+            <p><strong>Name:</strong> <span id="submitted-name"></span></p>
+            <p><strong>Email:</strong> <span id="submitted-email"></span></p>
+            <p><strong>Message:</strong> <span id="submitted-message"></span></p>
+        </div>
+
+        <a href="index.html" class="button-styles">Back to Home</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const name = urlParams.get('name');
+            const email = urlParams.get('email');
+            const message = urlParams.get('message');
+            const nameElement = document.getElementById('submitted-name');
+            const emailElement = document.getElementById('submitted-email');
+            const messageElement = document.getElementById('submitted-message');
+            if (nameElement) {
+                nameElement.textContent = name ? name : 'N/A';
+            }
+            if (emailElement) {
+                emailElement.textContent = email ? email : 'N/A';
+            }
+            if (messageElement) {
+                messageElement.textContent = message ? message : 'N/A';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Weather Search for inquiries or feedback.">
+
+    <meta property="og:title" content="Contact Weather Search">
+    <meta property="og:description" content="Contact Weather Search form">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="replaceaftercommiuting to github!! contact.html">
+    <!-- <meta property="og:image" content=""> -->
+
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <title>Contact Us - Weather Search</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Weather Search</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links-list">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="forecast.html">Forecast</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-form-section">
+            <div class="container vertical-container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? Fill out the form below.</p>
+                <form id="contact-form" action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button-styles">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Weather Search. All rights reserved.</p>
+            <p>Powered by OpenWeather API</p>
+        </div>
+    </footer>
+
+    <div id="weather-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <div id="modal-body">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
